@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="claude">
   <diagram name="Outbound Email Flow" id="email-flow">
-    <mxGraphModel dx="1373" dy="3632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="1173" dy="2424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -76,12 +76,6 @@
         <mxCell id="ps-send-no-template" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" value="sendEmailWithoutTemplate" vertex="1">
           <mxGeometry height="40" width="130" x="555" y="1025" as="geometry" />
         </mxCell>
-        <mxCell id="ps-get-template" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" value="getEmailTemplate" vertex="1">
-          <mxGeometry height="30" width="120" x="135" y="1620" as="geometry" />
-        </mxCell>
-        <mxCell id="ps-get-templates" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" value="getTemplates" vertex="1">
-          <mxGeometry height="30" width="100" x="555" y="1620" as="geometry" />
-        </mxCell>
         <mxCell id="ps-pipeline-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#dc2626;dashed=1;fontSize=11;align=center;verticalAlign=top;spacingTop=4" value="&lt;b&gt;Internal pipeline&lt;/b&gt;" vertex="1">
           <mxGeometry height="510" width="630" x="100" y="1080" as="geometry" />
         </mxCell>
@@ -130,7 +124,7 @@
         <mxCell id="ps-edge-client-filter" edge="1" parent="1" source="ps-step-client" style="endArrow=classic;html=1;rounded=0;strokeColor=#ca8a04;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ps-step-filter">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ps-edge-filter-threading" edge="1" parent="1" source="ps-step-filter" style="endArrow=classic;html=1;rounded=0;strokeColor=#d6b656;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="ps-step-threading">
+        <mxCell id="ps-edge-filter-threading" edge="1" parent="1" source="ps-step-filter" style="endArrow=classic;html=1;rounded=0;strokeColor=#d6b656;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ps-step-threading">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ps-edge-filter-send-tmpl" edge="1" parent="1" source="ps-step-filter" style="endArrow=classic;html=1;rounded=0;strokeColor=#d6b656;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ps-step-send-tmpl">
